@@ -9,3 +9,43 @@
   </PropertyGroup>
 
 </Project>
+Journal management
+-journals: List<Journal>
+
+Journal
+-title: String
+-entries: List<Entry>
+
+Entry
+-date: -date
+-content: String
+
+Class Definations
+1. Journal management: Manage a list of -journals
+2. Journal: Represents a journal with a tittle and a list of journal entries.
+3. Entry: Represents a journal entry with a date and content.
+
+Behavior Definations:
+'addJournal(journal: Journal)':
+Add a journal to the list.
+
+'removeJournal(journal:journal)':
+Remove a journal from the list.
+
+'listJounals()': List all available journals
+
+'generatePrompt(journal:journal)': Generate a prompt for a journal entry.
+
+Journal:
+'addEntry(entry: Entry)': Add an entry to the journal
+
+'deleteEntry(entry: entry)': Delete an entry from the journal.
+
+'listEntries()': Lis all entries in the journal.
+
+Entry: It mainly holds data.
+
+Saving/Loading:
+Impliment methods to save and load data, like using a file or database system.
+
+
