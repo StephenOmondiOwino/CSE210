@@ -1,0 +1,9 @@
+Public class  Entry{
+    public string Date;
+    public string prompt;
+    public string Response;
+
+    public static DisplayEntry(){
+        return $"{Date}:{propmt}-{Response}"
+    }
+}

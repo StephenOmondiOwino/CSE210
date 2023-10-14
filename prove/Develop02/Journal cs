@@ -1,0 +1,10 @@
+Public class Journal{
+    public List<Entry>Entries=new List<Entry>();
+
+    public void save(string fileName);
+    public void Load(string fileName);
+    public void Display(){
+        //loop through entries and display them
+        Entries [0]. Display ();
+    }
+}
