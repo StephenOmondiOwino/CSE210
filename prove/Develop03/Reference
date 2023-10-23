@@ -1,0 +1,21 @@
+Using system;
+public class Reference
+{
+    public string -book;
+    public int -chapter;
+    public int -verse;
+    public int -endverse;
+
+    public Reference(string book, string chapter, string verse) 
+    {
+        book = book;
+        chapter = chapter;
+        verse = verse;
+        endverse = endverse;
+    }
+    public string GetDisplayText()
+    {
+        string referenceText = $"{book} {chapter} {verse}";
+        return referenceText;
+    }
+}
