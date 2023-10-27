@@ -1,45 +1,27 @@
-using System;
+using Develop03
 
-
-class Program
-
+class program 
 {
-    static void Main(string[] args)
+    static string verse = @"And hereby we do know him, if we keep his commandments;";
+
+    static string reference = "JOHN 1:2-3";
+
+    static void Main(string[] args);
     {
-        Scripture scripture= new Scripture();
-    
+        //Instantiate aScripture with verse and reference
+        Scripture scripture = new Scripture(verse,new reference(reference, 3))
+        string input = "";
 
-        Console.Write("John 2:3");
-        scripture.Referance = Console.ReadLine();
-        Console.Write("And hereby we do know that we know him, if we keep his commandments");
-        scripture.Text = Console.ReadLine();
-
-        Console.Clear();
-        DisplayScripture(scripture);
-
-        while(true)
+        do
         {
-            Console.Write("\nPress Enter to hide random words or type 'quit' to exit:");
-            string input = Console.ReadLine();
-
-            if (input.ToLower() == "quit")
-            break;
-
-            scripture.Text = scripture.HideRandomWords();
-            Console.Clear();
-            DisplayScripture(scripture);
-        }
-        }
-
-        static void DisplayScripture(Scripture scripture)
-        {
-
-    
-
-        Console.WriteLine($"Scripture Reference: {scripture.Reference}");
-        Console.WriteLine($"Scripture Text: {scripture.Text}");
-        
-
-        Console.WriteLine();
+           //Clear the screen before displaying scripture
+           Console.Clear();
+           //Write out scripture and verse
+           Console.Write(scripture.ToString());
+           //Get user's input
+           input = Console.ReadLine(); 
+        } while (!input.ToUpper().Equals("QUIT")& !scripture.isFinished());
     }
+
+
 }

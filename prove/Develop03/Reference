@@ -1,21 +1,15 @@
-Using system;
+Using system. Text;
+
+namespace Develop03
+
+//Reference class keeps track of a scripture reference.
 public class Reference
 {
-    public string -book;
-    public int -chapter;
-    public int -verse;
-    public int -endverse;
+  private string reference;
 
-    public Reference(string book, string chapter, string verse) 
-    {
-        book = book;
-        chapter = chapter;
-        verse = verse;
-        endverse = endverse;
-    }
-    public string GetDisplayText()
-    {
-        string referenceText = $"{book} {chapter} {verse}";
-        return referenceText;
-    }
+  //Sets reference
+  public Reference(string reference) => this.reference = reference;
+
+  //Returns reference
+  public override string ToString() => reference;  
 }

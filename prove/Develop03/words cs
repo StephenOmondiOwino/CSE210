@@ -1,13 +1,23 @@
-public class words
+using System.ComponentModel.Design.Serialization;
+using System.Text.RegularExpressions;
 
-int count = wordsCountStri.Split(" ").Length;
-int wordsToRemove = 4
-x = count;
+namespace Develop03;
 
-while x > wordsToRemove
+//keeps track of an individual word in a scripture.
+public class words cs
 {
-    intWordPosition = Random.Next(1,count);
+    private string word;
+    private bool IsInvisible = true;
+    public word(string word)
+    {
+        this.word = word;
+    }
+    public void hide() (invisible = false;)
 
-    stringScripture = StringScripture.Replace
-    wordCount = 8
+    public bool getIsVisible() =>isVisible
+
+    public override string ToString()
+    {
+        return isVisible word : Regex.Replace(words, "[a-zA-Z]","_");
+    }
 }
