@@ -1,0 +1,47 @@
+using system;
+
+public class BreathingActivity : Activity
+
+//attributes
+{
+    private string_message 1 = "Breath in...";
+    private string_message 2 = "Now breath out...";
+    private string_description = "This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on breathing.";
+
+   // constructors
+   //methods
+   public BreathingActivity(string_activityName, int_activityTime) : base(activityName,activityTime)
+}
+{}
+public void GetActivityDescription()
+{
+    Console.WriteLine(_description);
+}
+public void breathing(int seconds)
+{
+    console.WriteLine(); //insert blank line to start
+    int secondsTimer = 0;
+    while (secondsTimer < seconds)
+    {
+        console.WriteLine(); //insert blank line to start
+        for (int i = 4, i>0, i--)
+        {
+            console.Write($"{message 1}{i} ");
+            Thread.Sleep(1000);
+            string blank =new string('\b',(_message1.Length + 2))
+            console.Write (blank);
+            secondsTimer+=1
+
+        }
+        console.WriteLine($"{message 1}  ") //last prompt
+        for (int i=5;i>0; i--)
+        {
+            Console.Write($"{_message 2}{i}");
+            Thread.Sleep(1000);
+            string blank = new string('\b',(message2 length+2)) //ovewrite
+            console.Write(blank);
+            secondsTimer+=1
+            console.WriteLine($"{message2}  ");
+        }
+    }
+}
